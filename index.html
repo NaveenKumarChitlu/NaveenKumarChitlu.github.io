@@ -1,354 +1,582 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Naveen Kumar Chitlu | Network Security Engineer</title>
+    <title>Naveen Kumar Chitlu | Network & Security Professional</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Naveen Kumar Chitlu - Network and Security professional at HCLTech, with previous experience at Microland Ltd. Explore technical skills and networking projects.">
+    <meta name="theme-color" content="#0d1117">
 
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-    scroll-behavior:smooth;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
 
-body{
-    background:#0d1117;
-    color:#ffffff;
-    line-height:1.6;
-}
+        body {
+            background: #0d1117;
+            color: #ffffff;
+            line-height: 1.7;
+        }
 
-header{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(135deg,#0d1117,#161b22,#1f2937);
-}
+        a {
+            color: #58a6ff;
+        }
 
-.hero{
-    max-width:900px;
-}
+        header {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0d1117, #161b22, #1f2937);
+        }
 
-.hero h1{
-    font-size:60px;
-    margin-bottom:15px;
-    color:#58a6ff;
-}
+        .hero {
+            max-width: 900px;
+            width: 100%;
+        }
 
-.hero h3{
-    font-size:28px;
-    color:#c9d1d9;
-    margin-bottom:25px;
-    font-weight:normal;
-}
+        .eyebrow {
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
 
-.hero p{
-    font-size:18px;
-    color:#8b949e;
-    margin-bottom:35px;
-}
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            line-height: 1.2;
+            margin-bottom: 18px;
+            color: #58a6ff;
+            overflow-wrap: anywhere;
+        }
 
-.button-group{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
+        .hero h2 {
+            font-size: clamp(21px, 3vw, 28px);
+            color: #c9d1d9;
+            margin-bottom: 22px;
+            font-weight: normal;
+        }
 
-.btn{
-    padding:14px 28px;
-    border-radius:10px;
-    text-decoration:none;
-    color:white;
-    font-size:17px;
-    transition:0.3s ease;
-    font-weight:bold;
-}
+        .hero p {
+            font-size: 17px;
+            color: #8b949e;
+            margin-bottom: 30px;
+        }
 
-.btn-primary{
-    background:#238636;
-}
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
 
-.btn-primary:hover{
-    background:#2ea043;
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 9px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
 
-.btn-secondary{
-    background:#21262d;
-    border:1px solid #30363d;
-}
+        .btn-primary {
+            background: #238636;
+        }
 
-.btn-secondary:hover{
-    background:#30363d;
-}
+        .btn-primary:hover {
+            background: #2ea043;
+        }
 
-section{
-    padding:80px 10%;
-}
+        .btn-secondary {
+            background: #21262d;
+            border: 1px solid #30363d;
+        }
 
-.section-title{
-    font-size:40px;
-    margin-bottom:40px;
-    color:#58a6ff;
-    text-align:center;
-}
+        .btn-secondary:hover {
+            background: #30363d;
+        }
 
-.card{
-    background:#161b22;
-    padding:30px;
-    border-radius:18px;
-    margin-bottom:25px;
-    border:1px solid #30363d;
-    transition:0.3s ease;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            padding: 18px 12px;
+            background: #161b22;
+            border-top: 1px solid #30363d;
+            border-bottom: 1px solid #30363d;
+        }
 
-.card:hover{
-    transform:translateY(-5px);
-}
+        nav a {
+            text-decoration: none;
+            color: #c9d1d9;
+            font-size: 14px;
+        }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
+        nav a:hover {
+            color: #58a6ff;
+        }
 
-.skill{
-    background:#21262d;
-    padding:15px;
-    border-radius:12px;
-    text-align:center;
-    border:1px solid #30363d;
-}
+        section {
+            padding: 70px 8%;
+            scroll-margin-top: 20px;
+        }
 
-ul{
-    list-style:none;
-}
+        .section-title {
+            font-size: clamp(28px, 4vw, 38px);
+            margin-bottom: 35px;
+            color: #58a6ff;
+            text-align: center;
+        }
 
-ul li{
-    padding:12px 0;
-    border-bottom:1px solid #30363d;
-}
+        .section-intro {
+            color: #8b949e;
+            text-align: center;
+            max-width: 760px;
+            margin: -18px auto 30px;
+        }
 
-.badge-container{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-}
+        .card {
+            background: #161b22;
+            padding: 28px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid #30363d;
+        }
 
-footer{
-    text-align:center;
-    padding:30px;
-    background:#161b22;
-    color:#8b949e;
-    border-top:1px solid #30363d;
-}
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 6px;
+        }
 
-.highlight{
-    color:#58a6ff;
-}
+        .highlight {
+            color: #58a6ff;
+        }
 
-@media(max-width:768px){
+        .muted {
+            color: #8b949e;
+            font-size: 14px;
+        }
 
-.hero h1{
-    font-size:40px;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
 
-.hero h3{
-    font-size:22px;
-}
+        .skill {
+            background: #161b22;
+            padding: 17px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #30363d;
+        }
 
-.section-title{
-    font-size:32px;
-}
+        .skill h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #c9d1d9;
+        }
 
-}
+        .skill p {
+            color: #8b949e;
+            font-size: 13px;
+        }
 
-</style>
+        ul.details {
+            list-style: none;
+            margin-top: 14px;
+        }
 
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        ul.details li {
+            padding: 10px 0;
+            border-bottom: 1px solid #30363d;
+        }
 
+        ul.details li:last-child {
+            border-bottom: none;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .project-card p {
+            color: #c9d1d9;
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #21262d;
+            border: 1px solid #30363d;
+            color: #8b949e;
+            padding: 4px 9px;
+            border-radius: 6px;
+            margin: 10px 5px 0 0;
+            font-size: 12px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px 16px;
+            background: #161b22;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                min-height: 80vh;
+                padding: 40px 18px;
+            }
+
+            section {
+                padding: 48px 6%;
+            }
+
+            .card {
+                padding: 21px;
+            }
+
+            nav {
+                gap: 12px 18px;
+            }
+
+            .btn {
+                padding: 12px 17px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
+    <header id="home">
+        <div class="hero">
+            <p class="eyebrow">Network & Security Professional</p>
 
-<div class="hero">
+            <h1>Naveen Kumar Chitlu</h1>
 
-<h1>Naveen Kumar Chitlu</h1>
+            <h2>Senior Technical Specialist | HCLTech</h2>
 
-<h3>Network Security Engineer</h3>
+            <p>
+                Focused on enterprise network operations, network security,
+                firewall administration, connectivity troubleshooting
+                and infrastructure support.
+            </p>
 
-<p>
-Specialized in Palo Alto, Cisco FTD, Checkpoint Firewalls,
-F5 Load Balancers, Zscaler and Enterprise Network Operations.
-</p>
+            <div class="button-group">
+                <a class="btn btn-primary"
+                   href="https://in.linkedin.com/in/naveenkumarchitlu"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View LinkedIn Profile
+                </a>
 
-<div class="button-group">
+                <a class="btn btn-secondary" href="#experience">
+                    Professional Experience
+                </a>
 
-<a href="https://in.linkedin.com/in/naveenkumarchitlu"
-target="_blank"
-class="btn btn-primary">
-View LinkedIn
-</a>
+                <a class="btn btn-secondary" href="#projects">
+                    Explore Projects
+                </a>
+            </div>
+        </div>
+    </header>
 
-<a href="#skills"
-class="btn btn-secondary">
-Explore Skills
-</a>
+    <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-</div>
+    <main>
+        <section id="about">
+            <h2 class="section-title">Professional Summary</h2>
 
-<div class="badge-container">
+            <div class="card">
+                <p>
+                    Network and Security professional currently working at
+                    HCLTech as a Senior Technical Specialist, with previous
+                    experience at Microland Ltd. as a Senior Administrator –
+                    Digital Network. Areas of focus include enterprise network
+                    operations, firewall administration, VPN, NAT, routing
+                    and switching, wireless infrastructure and network
+                    security troubleshooting.
+                </p>
+            </div>
+        </section>
 
-<div class="badge-base LI-profile-badge"
-data-locale="en_US"
-data-size="large"
-data-theme="dark"
-data-type="HORIZONTAL"
-data-vanity="naveenkumarchitlu"
-data-version="v1">
-<a class="badge-base__link LI-simple-link"
-href="https://in.linkedin.com/in/naveenkumarchitlu?trk=profile-badge">
-Naveen Kumar Chitlu
-</a>
-</div>
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
 
-</div>
+            <p class="section-intro">
+                Technologies and tools relevant to network operations
+                and security support.
+            </p>
 
-</div>
+            <div class="grid">
+                <div class="skill">
+                    <h3>Firewall Security</h3>
+                    <p>Palo Alto, Cisco ASA, Cisco FTD</p>
+                </div>
 
-</header>
+                <div class="skill">
+                    <h3>Network Security</h3>
+                    <p>Security Policies, NAT, ACL, VPN</p>
+                </div>
 
-<section>
+                <div class="skill">
+                    <h3>Load Balancing</h3>
+                    <p>F5 BIG-IP LTM / GTM</p>
+                </div>
 
-<h2 class="section-title">Professional Summary</h2>
+                <div class="skill">
+                    <h3>Routing & Switching</h3>
+                    <p>VLANs, Routing, Connectivity Troubleshooting</p>
+                </div>
 
-<div class="card">
+                <div class="skill">
+                    <h3>Wireless Networking</h3>
+                    <p>Cisco Meraki, Ubiquiti UniFi</p>
+                </div>
 
-<p>
-Dedicated Network Security Engineer with around 4 years of experience
-managing, securing and optimizing enterprise networks across multiple vendors.
-Hands-on experience with Palo Alto, Cisco FTD, Checkpoint Firewalls,
-BigIP F5 LTM Load Balancers, Cisco Meraki, Ubiquiti and Zscaler technologies.
-</p>
+                <div class="skill">
+                    <h3>Cloud Security</h3>
+                    <p>Zscaler</p>
+                </div>
 
-</div>
+                <div class="skill">
+                    <h3>Monitoring & Analysis</h3>
+                    <p>Wireshark, SolarWinds, Splunk</p>
+                </div>
 
-</section>
+                <div class="skill">
+                    <h3>IT Service Management</h3>
+                    <p>ServiceNow, Jira</p>
+                </div>
+            </div>
 
-<section id="skills">
+            <p class="section-intro" style="margin-top: 25px;">
+                Note: Retain only technologies you have actually used
+                or can confidently discuss in an interview.
+            </p>
+        </section>
 
-<h2 class="section-title">Technical Skills</h2>
+        <section id="experience">
+            <h2 class="section-title">Professional Experience</h2>
 
-<div class="grid">
+            <div class="card">
+                <h3 class="highlight">HCLTech</h3>
 
-<div class="skill">Palo Alto Firewalls</div>
-<div class="skill">Cisco FTD</div>
-<div class="skill">Checkpoint</div>
-<div class="skill">F5 LTM</div>
-<div class="skill">Zscaler</div>
-<div class="skill">Cisco Meraki</div>
-<div class="skill">Ubiquiti Unifi</div>
-<div class="skill">VPN (IPSec)</div>
-<div class="skill">NAT & ACL</div>
-<div class="skill">Routing & Switching</div>
-<div class="skill">Wireshark</div>
-<div class="skill">Splunk</div>
+                <p><strong>Senior Technical Specialist</strong></p>
+                <p class="muted">September 2026 – Present</p>
 
-</div>
+                <ul class="details">
+                    <li>
+                        Current role in enterprise technical services,
+                        with a focus on network and security infrastructure.
+                    </li>
+                    <li>
+                        Supporting assigned responsibilities, operational
+                        processes and technical service requirements.
+                    </li>
+                </ul>
+            </div>
 
-</section>
+            <div class="card">
+                <h3 class="highlight">Microland Ltd.</h3>
 
-<section>
+                <p><strong>Senior Administrator – Digital Network</strong></p>
+                <p class="muted">October 2022 – September 2026</p>
 
-<h2 class="section-title">Certifications</h2>
+                <ul class="details">
+                    <li>
+                        Supported Cisco Meraki and Ubiquiti wireless
+                        infrastructure, focusing on availability and stability.
+                    </li>
+                    <li>
+                        Performed network security policy support and
+                        firewall troubleshooting within assigned environments.
+                    </li>
+                    <li>
+                        Supported F5 LTM load-balancing operations,
+                        including virtual servers, pools and SSL-related tasks.
+                    </li>
+                    <li>
+                        Supported Zscaler operations and security policy
+                        management.
+                    </li>
+                    <li>
+                        Troubleshot network incidents using monitoring,
+                        packet analysis and root cause analysis methods.
+                    </li>
+                    <li>
+                        Supported VLAN, routing, switching and network
+                        connectivity troubleshooting.
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-<div class="card">
+        <section id="projects">
+            <h2 class="section-title">Hands-on Projects</h2>
 
-<ul>
-<li>PCNSA – Palo Alto Networks Certified Network Security Administrator</li>
-<li>ZTCA – Zscaler Zero Trust Certified Associate</li>
-</ul>
+            <p class="section-intro">
+                Technical lab exercises and troubleshooting case studies.
+                Add only projects you have actually completed.
+            </p>
 
-</div>
+            <div class="grid">
+                <div class="card project-card">
+                    <h3 class="highlight">Firewall Packet-Flow Analysis</h3>
 
-</section>
+                    <p>
+                        Examine security policy matching, routing,
+                        NAT translation, session handling and packet drops
+                        in a firewall lab.
+                    </p>
 
-<section>
+                    <div>
+                        <span class="tag">Palo Alto</span>
+                        <span class="tag">Cisco ASA</span>
+                        <span class="tag">NAT</span>
+                    </div>
+                </div>
 
-<h2 class="section-title">Professional Experience</h2>
+                <div class="card project-card">
+                    <h3 class="highlight">IPsec VPN Troubleshooting</h3>
 
-<div class="card">
+                    <p>
+                        Investigate IKE negotiation, IPsec security
+                        associations, routing and tunnel connectivity
+                        using a lab environment.
+                    </p>
 
-<h3 class="highlight">
-Microland Ltd — Network Engineer
-</h3>
+                    <div>
+                        <span class="tag">IPsec</span>
+                        <span class="tag">IKE</span>
+                        <span class="tag">Troubleshooting</span>
+                    </div>
+                </div>
 
-<br>
+                <div class="card project-card">
+                    <h3 class="highlight">F5 LTM Load Balancing</h3>
 
-<ul>
+                    <p>
+                        Explore virtual servers, pools, pool members,
+                        health monitors and application traffic distribution.
+                    </p>
 
-<li>
-Managed Cisco Meraki and Ubiquiti wireless infrastructure with focus on uptime and stability.
-</li>
+                    <div>
+                        <span class="tag">F5 BIG-IP</span>
+                        <span class="tag">LTM</span>
+                        <span class="tag">Load Balancing</span>
+                    </div>
+                </div>
 
-<li>
-Handled policy configuration and troubleshooting for Palo Alto, Cisco FTD and Checkpoint firewalls.
-</li>
+                <div class="card project-card">
+                    <h3 class="highlight">VLAN & Connectivity Troubleshooting</h3>
 
-<li>
-Worked on F5 LTM VIPs, pools, SSL certificate renewals and SSL offloading.
-</li>
+                    <p>
+                        Practise identifying VLAN mismatches, incorrect
+                        addressing, routing problems and connectivity failures.
+                    </p>
 
-<li>
-Performed operational changes and policy management in Zscaler environments.
-</li>
+                    <div>
+                        <span class="tag">VLAN</span>
+                        <span class="tag">Routing</span>
+                        <span class="tag">Switching</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<li>
-Troubleshot critical P1/P2 issues using Wireshark, Splunk and RCA methodologies.
-</li>
+        <section id="certifications">
+            <h2 class="section-title">Certifications</h2>
 
-<li>
-Worked on VLANs, EtherChannel, BGP and EIGRP related operations.
-</li>
+            <div class="card">
+                <ul class="details">
+                    <li>
+                        <strong>PCNSA</strong> – Palo Alto Networks
+                        Certified Network Security Administrator
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-</ul>
+        <section id="education">
+            <h2 class="section-title">Education</h2>
 
-</div>
+            <div class="card">
+                <h3 class="highlight">Bachelor of Technology</h3>
+                <p>Mechanical Engineering</p>
+                <p class="muted">
+                    Sri Venkateshwara Institute of Science & IT
+                </p>
+            </div>
+        </section>
 
-</section>
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
 
-<section>
+            <p class="section-intro">
+                Connect with me for professional networking
+                and technical discussions.
+            </p>
 
-<h2 class="section-title">Education</h2>
+            <div class="contact-links">
+                <a class="btn btn-primary"
+                   href="https://in.linkedin.com/in/naveenkumarchitlu"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn
+                </a>
 
-<div class="card">
+                <a class="btn btn-secondary"
+                   href="https://github.com/NaveenKumarChitlu">
+                    GitHub Profile
+                </a>
+            </div>
+        </section>
+    </main>
 
-<p>
-B.Tech – Mechanical Engineering <br>
-Sri Venkateshwara Institute of Science & IT
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Naveen Kumar Chitlu | Network Security Portfolio
-
-</footer>
+    <footer>
+        <p>
+            &copy; 2026 Naveen Kumar Chitlu |
+            Network & Security Portfolio
+        </p>
+    </footer>
 
 </body>
 </html>
